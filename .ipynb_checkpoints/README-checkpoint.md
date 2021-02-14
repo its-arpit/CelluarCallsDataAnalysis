@@ -1,8 +1,8 @@
 # CelluarCallsDataAnalysis
 Emergency (911) Calls: Fire, Traffic, EMS for Montgomery County, PA
 
-| Table of Contents |
-| --- |
+| SR. | Table of Contents |
+| ---| --- |
 | 1 | Data and Setup |
 | 2  | Basic Question |
 |2.1 | What are the top 5 Zip code for calls? |
