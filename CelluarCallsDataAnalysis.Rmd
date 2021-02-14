@@ -1,0 +1,80 @@
+---
+jupyter:
+  jupytext:
+    formats: ipynb,Rmd
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.10.1
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
+
+<!-- #region toc=true -->
+<h1>Table of Contents<span class="tocSkip"></span></h1>
+<div class="toc"><ul class="toc-item"><li><span><a href="#Data-and-Setup" data-toc-modified-id="Data-and-Setup-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Data and Setup</a></span></li><li><span><a href="#Basic-Question" data-toc-modified-id="Basic-Question-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Basic Question</a></span><ul class="toc-item"><li><span><a href="#What-are-the-top-5-Zipcode-for-calls?" data-toc-modified-id="What-are-the-top-5-Zipcode-for-calls?-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>What are the top 5 Zipcode for calls?</a></span></li><li><span><a href="#What-are-the-top-5-townships-(twp)-for-calls?" data-toc-modified-id="What-are-the-top-5-townships-(twp)-for-calls?-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>What are the top 5 townships (twp) for calls?</a></span></li><li><span><a href="#Take-a-look-at-'title'-column,-how-many-unique-titles-codes-are-there?" data-toc-modified-id="Take-a-look-at-'title'-column,-how-many-unique-titles-codes-are-there?-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>Take a look at 'title' column, how many unique titles codes are there?</a></span></li></ul></li></ul></div>
+<!-- #endregion -->
+
+```{python}
+# %autosave 0
+
+```
+
+# Cellular Data Analysis
+
+```{python}
+
+```
+
+```{python}
+
+```
+
+## Data and Setup
+
+```{python}
+import numpy as np
+import pandas as pd
+```
+
+```{python}
+import matplotlib.pyplot as plt
+import seaborn as sns
+# %matplotlib inline
+```
+
+```{python}
+df = pd.read_csv('911.csv')
+```
+
+```{python}
+df.head()
+```
+
+## Basic Question
+
+
+### What are the top 5 Zipcode for calls?
+
+```{python}
+df['zip'].value_counts().head(5)
+```
+
+### What are the top 5 townships (twp) for calls?
+
+```{python}
+df['twp'].value_counts().head(5)
+```
+
+### Take a look at 'title' column, how many unique titles codes are there?
+
+```{python}
+df['title'].nunique()
+```
+
+```{python}
+
+```
